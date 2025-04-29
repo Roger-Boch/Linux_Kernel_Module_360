@@ -11,7 +11,7 @@ cd ~/sys_health_monitor
 
 Save the Kernel Module code:
 nano sys_health_monitor.c
-(copy and paste code into nano)
+(copy and paste code into nano "program.c")
 
 create the makefile
 nano Makefile
