@@ -4,6 +4,7 @@ This is for the semester project for 360 Professor Chen
 installing on Ubuntu/debian-based systems
 run these:
 **sudo apt update //make sure system is up to date
+
 sudo apt install build-essential linux-headers-$(uname -r) 
 
 then make a directory:
