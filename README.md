@@ -30,19 +30,19 @@ copy and paste this code:
 
 obj-m += sys_health_monitor.o  # Name of the module
 
+
+
 KDIR := /lib/modules/$(shell uname -r)/build
 
 PWD := $(shell pwd)
 
 all:
-
 	$(MAKE) -C $(KDIR) M=$(PWD) modules
- 
+
 cat
 
 
 clean:
-
 	$(MAKE) -C $(KDIR) M=$(PWD) clean
 
 
