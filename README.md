@@ -40,9 +40,6 @@ all:
 
 	$(MAKE) -C $(KDIR) M=$(PWD) modules
 
-cat
-
-
 clean:
 
 	$(MAKE) -C $(KDIR) M=$(PWD) clean
