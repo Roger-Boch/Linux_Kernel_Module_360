@@ -33,10 +33,10 @@
  */
  static struct timer_list health_timer;
  static struct proc_dir_entry *proc_entry;
- static int cpu_threshold = 200;
- static unsigned long disk_io_threshold = 5000; 
- static unsigned int ram_threshold = 60;   
- static unsigned long last_disk_io = 0;  
+ static int cpu_threshold = 200;  // Scaled (2.00 = 200)
+ static unsigned long disk_io_threshold = 5000;
+ static unsigned int ram_threshold = 60;
+ static unsigned long last_disk_io = 0;
  
  module_param(cpu_threshold, int, 0644);
  MODULE_PARM_DESC(cpu_threshold, "CPU load threshold (scaled x100)");
